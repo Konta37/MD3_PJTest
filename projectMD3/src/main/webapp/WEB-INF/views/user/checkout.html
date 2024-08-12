@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  
+<!-- Mirrored from nouthemes.net/html/claue/checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 08:00:14 GMT -->
+<head th:insert="/layout/user/layout::header-frag">
+
+</head>
+  <body>
+  <th:block th:replace="/layout/user/layout::header"></th:block>
+    <div class="ps-hero bg--cover" data-background="img/hero/shop.jpg">
+      <div class="container">
+        <h1>Checkout</h1>
+      </div>
+    </div>
+    <div class="ps-page">
+      <div class="ps-page__content">
+        <div class="container">
+          <div class="ps-checkout">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
+                <form class="ps-form--checkout" action="https://nouthemes.net/html/claue/do_action" method="post">
+                  <h3 class="ps-checkout__heading">BILLING DETAILS</h3>
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
+                      <div class="form-group">
+                        <label>Fist Name <sup>*</sup></label>
+                        <input class="form-control" type="text" placeholder="">
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
+                      <div class="form-group">
+                        <label>Last Name <sup>*</sup></label>
+                        <input class="form-control" type="text" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Company name (optional)</label>
+                    <input class="form-control" type="text" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label>Country</label>
+                    <select class="form-control">
+                      <option value="1">USA</option>
+                      <option value="1">Singapore</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Street Address <sup>*</sup></label>
+                    <input class="form-control" type="text" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label>Town / City <sup>*</sup></label>
+                    <input class="form-control" type="text" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label>Phone <sup>*</sup></label>
+                    <input class="form-control" type="text" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label>Email address <sup>*</sup></label>
+                    <input class="form-control" type="email" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <div class="ps-checkbox">
+                      <input class="form-control" type="checkbox" id="create" name="create"/>
+                      <label for="create">Create an account?</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Order notes (optional)</label>
+                    <textarea class="form-control" rows="5" placeholder=""></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
+                <h3 class="ps-checkout__heading">YOUR ORDER</h3>
+                <div class="table-responsive">
+                  <table class="table ps-table ps-table--checkout">
+                    <tbody>
+                      <tr>
+                        <td><strong>Product</strong></td>
+                        <td><strong>Total</strong></td>
+                      </tr>
+                      <tr>
+                        <td><a href="#"><img src="img/product/best-2-1.jpg" alt=""></a>
+                          <p> Cyan Boheme - Cyan, M 	× 1</p>
+                        </td>
+                        <td>$45.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Subtotal</strong></td>
+                        <td>$45.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Shipping</strong></td>
+                        <td>Local Pickup: $15.00</td>
+                      </tr>
+                      <tr class="total">
+                        <td><strong>Total</strong></td>
+                        <td>$60.00</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="ps-checkout__payment-menthod">
+                  <div class="ps-radio">
+                    <input class="form-control" type="radio" id="payment-method-1" name="payment-menthod"/>
+                    <label for="payment-method-1">Check payments</label>
+                  </div>
+                  <div class="ps-radio">
+                    <input class="form-control" type="radio" id="payment-method-2" name="payment-menthod"/>
+                    <label for="payment-method-2">Cash on delivery</label>
+                  </div>
+                  <div class="ps-radio">
+                    <input class="form-control" type="radio" id="payment-method-3" name="payment-menthod">
+                    <label for="payment-method-3">Visa <img src="img/visa.jpg" alt=""></label>
+                  </div>
+                  <button class="ps-btn ps-btn--outline ps-btn--black">Place order</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="ps-footer">
+      <div class="ps-footer__content">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12  ">
+              <div class="ps-site-info"><a class="ps-logo" href="#"><img src="img/logo.png" alt=""></a>
+                <figure>
+                  <p><i class="pe-7s-map-marker"></i> 184 Main Rd E, St Albans <br> VIC 3021, Australia</p>
+                  <p><i class="pe-7s-mail"></i><a href="https://nouthemes.net/cdn-cgi/l/email-protection#7b1814150f1a180f3b1814160b1a150255181416"><span class="__cf_email__" data-cfemail="bad9d5d4cedbd9cefad9d5d7cadbd4c394d9d5d7">[email&#160;protected]</span></a></p>
+                  <p><i class="pe-7s-call"></i> +001 2233 456</p>
+                </figure>
+                <ul class="ps-list--social">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12  ">
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 ">
+                  <div class="widget widget_footer">
+                    <h3 class="widget-title">Categories</h3>
+                    <ul>
+                      <li><a href="shop-4-column.html">Men</a></li>
+                      <li><a href="shop-4-column.html">Women</a></li>
+                      <li><a href="shop-4-column.html">Accessories</a></li>
+                      <li><a href="shop-4-column.html">Shoes</a></li>
+                      <li><a href="shop-4-column.html">Denim</a></li>
+                      <li><a href="shop-4-column.html">Dress</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 ">
+                  <div class="widget widget_footer">
+                    <h3 class="widget-title">Infomation</h3>
+                    <ul>
+                      <li><a href="about-us.html">About Us</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                      <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                      <li><a href="returns-exchanges.html">Returns & Exchanges</a></li>
+                      <li><a href="#">Shipping & Delivery</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 ">
+                  <div class="widget widget_footer">
+                    <h3 class="widget-title">Quick Links</h3>
+                    <ul>
+                      <li><a href="#">Store Location</a></li>
+                      <li><a href="my-account.html">My Account</a></li>
+                      <li><a href="orders-tracking.html">Orders Tracking</a></li>
+                      <li><a href="size-guides.html">Size Guide</a></li>
+                      <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 ">
+              <form class="ps-form--subscribe-footer" action="https://nouthemes.net/html/claue/do_action" method="post">
+                <p>Subscribe to our newsletter and get 10% off your first purchase</p>
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Your EmaiL Address">
+                  <button>Subscribe</button>
+                </div><img src="img/payment2.png" alt="">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ps-footer__copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ">
+              <p>Copyright © 2016 <a href="#">Claue</a> all rights reserved. Powered by <a href="#">JanStudio</a></p>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ">
+              <ul class="ps-footer__nav">
+                <li><a href="#">Shop</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="about-us.html">Contact</a></li>
+                <li><a href="about-us.html">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="back2top"><i class="pe-7s-angle-up"></i></div>
+    <div class="ps-site-overlay"></div>
+    <div id="loader-wrapper">
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <div class="ps-search" id="site-search"><a class="ps-btn--close" href="#"></a>
+      <div class="ps-search__content">
+        <form class="ps-form--primary-search" action="https://nouthemes.net/html/claue/do_action" method="post">
+          <input class="form-control" type="text" placeholder="Search for...">
+          <button><i class="aroma-magnifying-glass"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="ps-cart--sidebar">
+      <div class="ps-cart__header">
+        <h3>Mini Cart</h3><a class="ps-btn--close ps-btn--no-boder" href="#"></a>
+      </div>
+      <div class="ps-cart__content">
+        <div class="ps-product--cart">
+          <div class="ps-product__thumbnail"><a href="product-standard.html"><img src="img/product/best-5-1.jpg" alt=""></a><span class="ps-btn--close ps-btn--no-boder"></span></div>
+          <div class="ps-product__content"><a href="#">Cyan Boheme - Cyan, M</a><span>1x $45.00</span></div>
+        </div>
+        <div class="ps-product--cart">
+          <div class="ps-product__thumbnail"><a href="product-standard.html"><img src="img/product/best-3-1.jpg" alt=""></a><span class="ps-btn--close ps-btn--no-boder"></span></div>
+          <div class="ps-product__content"><a href="#">Cyan Boheme - Cyan, M</a><span>Size: M</span><span>1x $45.00</span></div>
+        </div>
+      </div>
+      <div class="ps-cart__footer">
+        <h4>SubTotal: <span>$60.00</span></h4><a class="ps-btn" href="shopping-cart.html">View Cart</a><a class="ps-btn" href="shopping-cart.html">Checkout</a>
+      </div>
+    </div>
+    <!-- Plugins-->
+  <th:block th:replace="/layout/user/layout::plugins-jss-link"></th:block>
+  </body>
+
+<!-- Mirrored from nouthemes.net/html/claue/checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 08:00:15 GMT -->
+</html>

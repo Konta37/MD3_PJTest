@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<!-- Mirrored from nouthemes.net/html/claue/list-products.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 07:59:32 GMT -->
+<head th:insert="/layout/user/layout::header-frag">
+
+</head>
+<body>
+<th:block th:replace="/layout/user/layout::header"></th:block>
+<div class="ps-page">
+    <ul class="ps-list--categories">
+        <li><a href="list-products.html">Accessories</a></li>
+        <li><a href="list-products.html">Bottom</a></li>
+        <li><a href="list-products.html">Demin</a></li>
+        <li><a href="list-products.html">Dress</a></li>
+        <li><a href="list-products.html">Jackets</a></li>
+        <li><a href="list-products.html">Jewellery</a></li>
+        <li><a href="list-products.html">Men</a></li>
+        <li><a href="list-products.html">Shoes</a></li>
+        <li><a href="list-products.html">Swim</a></li>
+        <li><a href="list-products.html">T-Shirt</a></li>
+        <li><a href="list-products.html">Tops</a></li>
+        <li><a href="list-products.html">Uncategories</a></li>
+        <li><a href="list-products.html">Women</a></li>
+    </ul>
+    <div class="ps-hero bg--cover" data-background="img/hero/shop.jpg">
+        <div class="container">
+            <h1>Shop All Products</h1>
+            <p>Online fashion, furniture, handmade... store</p>
+        </div>
+    </div>
+    <div class="ps-shopping">
+        <div class="container">
+            <div class="ps-filter--shopping"><a class="ps-filter__trigger" href="#" id="filter-sidebar"><i
+                    class="fa fa-sliders"></i></a>
+<!--                <div class="ps-filter__column-switch"><a class="two" href="shop-2-column.html"></a><a class="three"-->
+<!--                                                                                                      href="shop-3-column.html"></a><a-->
+<!--                        class="active four" href="list-products.html"></a><a class="six" href="shop-6-column.html"></a>-->
+<!--                </div>-->
+                <div class="form-group--select"><i class="fa fa-angle-down"></i>
+                    <div class="form-group__content">
+                        <select class="form-control">
+                            <option value="1">Sort by Lastest</option>
+                            <option value="1">Sort by Price</option>
+                            <option value="1">Sort by Average Rating</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <th:block th:replace="/layout/user/layoutProduct::list-products"></th:block>
+<!--        this need to be replaced by page to page-->
+            <div class="ps-shopping__footer"><a class="ps-btn ps-btn--outline ps-btn--black" href="#">Load more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<th:block th:replace="/layout/user/layout::footer"></th:block>
+<div class="ps-filter--sidebar">
+    <div class="ps-filter__header">
+        <h3>Filter</h3><a class="ps-btn--close ps-btn--no-boder" href="#"></a>
+    </div>
+    <div class="ps-filter__content">
+        <aside class="widget widget_shop widget_brand">
+            <h3 class="widget-title">Filter by Brand</h3><a href="#">CK</a><a href="#">H&M</a><a href="#">Manga</a><a
+                href="#">Nike</a>
+        </aside>
+        <aside class="widget widget_filter widget_shop">
+            <h3 class="widget-title">Filter by price</h3>
+            <p class="ps-slider__meta">Price:<span class="ps-slider__value ps-slider__min"></span>-<span
+                    class="ps-slider__value ps-slider__max"></span></p>
+            <div class="ps-slider" data-default-min="0" data-default-max="500" data-max="1000" data-step="100"
+                 data-unit="$"></div>
+            <a class="ps-btn ps-btn--black ps-btn--outline" href="#">Filter</a>
+        </aside>
+        <aside class="widget widget_shop widget_color">
+            <h3 class="widget-title">By Color</h3>
+            <div class="ps-checkbox ps-checkbox--color color-sidebar color-1 ps-checkbox--inline">
+                <input class="form-control" type="checkbox" id="color-1" name="size"/>
+                <label for="color-1"></label>
+            </div>
+            <div class="ps-checkbox ps-checkbox--color color-sidebar color-2 ps-checkbox--inline">
+                <input class="form-control" type="checkbox" id="color-2" name="size"/>
+                <label for="color-2"></label>
+            </div>
+            <div class="ps-checkbox ps-checkbox--color color-sidebar color-3 ps-checkbox--inline">
+                <input class="form-control" type="checkbox" id="color-3" name="size"/>
+                <label for="color-3"></label>
+            </div>
+            <div class="ps-checkbox ps-checkbox--color color-sidebar color-4 ps-checkbox--inline">
+                <input class="form-control" type="checkbox" id="color-4" name="size"/>
+                <label for="color-4"></label>
+            </div>
+            <div class="ps-checkbox ps-checkbox--color color-sidebar color-5 ps-checkbox--inline">
+                <input class="form-control" type="checkbox" id="color-5" name="size"/>
+                <label for="color-5"></label>
+            </div>
+            <div class="ps-checkbox ps-checkbox--color color-sidebar color-6 ps-checkbox--inline">
+                <input class="form-control" type="checkbox" id="color-6" name="size"/>
+                <label for="color-6"></label>
+            </div>
+            <div class="ps-checkbox ps-checkbox--color color-sidebar color-7 ps-checkbox--inline">
+                <input class="form-control" type="checkbox" id="color-7" name="size"/>
+                <label for="color-7"></label>
+            </div>
+            <div class="ps-checkbox ps-checkbox--color color-sidebar color-8 ps-checkbox--inline">
+                <input class="form-control" type="checkbox" id="color-8" name="size"/>
+                <label for="color-8"></label>
+            </div>
+            <div class="ps-checkbox ps-checkbox--color color-sidebar color-9 ps-checkbox--inline">
+                <input class="form-control" type="checkbox" id="color-9" name="size"/>
+                <label for="color-9"></label>
+            </div>
+        </aside>
+        <aside class="widget widget_shop widget_size">
+            <h3 class="widget-title">By Size</h3>
+            <div class="form-group--select"><i class="fa fa-angle-down"></i>
+                <div class="form-group__content">
+                    <select class="form-control">
+                        <option value="1">SM</option>
+                        <option value="2">M</option>
+                        <option value="3">L</option>
+                        <option value="4">XL</option>
+                    </select>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>
+<div id="back2top"><i class="pe-7s-angle-up"></i></div>
+<div class="ps-site-overlay"></div>
+<div id="loader-wrapper">
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+<div class="ps-search" id="site-search"><a class="ps-btn--close" href="#"></a>
+    <div class="ps-search__content">
+        <form class="ps-form--primary-search" action="https://nouthemes.net/html/claue/do_action" method="post">
+            <input class="form-control" type="text" placeholder="Search for...">
+            <button><i class="aroma-magnifying-glass"></i></button>
+        </form>
+    </div>
+</div>
+
+<th:block th:replace="/layout/user/layout::plugins-jss-link"></th:block>
+</body>
+
+<!-- Mirrored from nouthemes.net/html/claue/list-products.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2023 07:59:33 GMT -->
+</html>

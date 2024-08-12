@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--layout link breadcrumb (link hamburger)-->
+<th:block th:fragment="bread-cumb">
+    <div class="ps-breadcrumb">
+        <div class="container-fluid">
+            <ul class="breadcrumb">
+                <li><a th:href="index">Home</a></li>
+<!--                This line is category-->
+                <li><a href="shop-4-column.html">Category</a></li>
+                <li>Premium Shoes Clean Package</li>
+            </ul>
+        </div>
+    </div>
+</th:block>
+<!--layout list products on top of page-->
+<th:block th:fragment="list-products">
+    <div class="ps-shopping__content">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 ">
+                <div class="ps-product">
+                    <div class="ps-product__thumbnail"><a class="ps-product__overlay"
+                                                          href="product-standard.html"></a><a
+                            class="ps-product__img" href="product-standard.html"><img
+                            th:src="@{/assets/img/product/best-1-1.jpg}" alt=""/></a><a class="ps-product__img-alt"
+                                                                          href="product-standard.html"><img
+                            th:src="@{/assets/img/product/best-1-2.jpg}" alt=""/></a><a class="ps-product__favorite" href="#"><i
+                            class="fa fa-heart-o"></i></a>
+                        <ul class="ps-product__actions">
+                            <li><a href="product-standard.html">Quick Shop</a></li>
+                            <li><a href="product-standard.html">Add to cart</a></li>
+                        </ul>
+                        <p class="ps-product__size">S, M, L</p>
+                    </div>
+                    <div class="ps-product__content">
+                        <div class="ps-product__meta"><a href="shop-2-column.html"></a></div>
+                        <a class="ps-product__title" href="product-standard.html">Analogue Resin Strap Watch</a>
+                        <p class="ps-product__price"> $85.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 ">
+                <div class="ps-product">
+                    <div class="ps-product__thumbnail"><a class="ps-product__overlay"
+                                                          href="product-standard.html"></a><a
+                            class="ps-product__img" href="product-standard.html"><img
+                            th:src="@{/assets/img/product/best-2-1.jpg}" alt=""/></a><a class="ps-product__img-alt"
+                                                                          href="product-standard.html"><img
+                            th:src="@{/assets/img/product/best-2-2.jpg}" alt=""/></a><a class="ps-product__favorite" href="#"><i
+                            class="fa fa-heart-o"></i></a>
+                        <ul class="ps-product__actions">
+                            <li><a href="product-standard.html">Quick Shop</a></li>
+                            <li><a href="product-standard.html">Add to cart</a></li>
+                        </ul>
+                        <p class="ps-product__size">S, M, L</p>
+                    </div>
+                    <div class="ps-product__content">
+                        <div class="ps-product__meta"><a href="shop-2-column.html"></a></div>
+                        <a class="ps-product__title" href="product-standard.html">ASOS Ridley High Waist</a>
+                        <p class="ps-product__price"> $36.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 ">
+                <div class="ps-product">
+                    <div class="ps-product__thumbnail"><a class="ps-product__overlay"
+                                                          href="product-standard.html"></a><a
+                            class="ps-product__img" href="product-standard.html"><img
+                            th:src="@{/assets/img/product/best-3-1.jpg}" alt=""/></a><a class="ps-product__img-alt"
+                                                                          href="product-standard.html"><img
+                            th:src="@{/assets/img/product/best-3-2.jpg}" alt=""/></a><a class="ps-product__favorite" href="#"><i
+                            class="fa fa-heart-o"></i></a>
+                        <ul class="ps-product__actions">
+                            <li><a href="product-standard.html">Quick Shop</a></li>
+                            <li><a href="product-standard.html">Add to cart</a></li>
+                        </ul>
+                        <p class="ps-product__size">S, M, L</p>
+                    </div>
+                    <div class="ps-product__content">
+                        <div class="ps-product__meta"><a href="shop-2-column.html"></a></div>
+                        <a class="ps-product__title" href="product-standard.html">Brown Sneaker Shoes</a>
+                        <p class="ps-product__price"> $45.00 – $53.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 ">
+                <div class="ps-product">
+                    <div class="ps-product__thumbnail"><a class="ps-product__overlay"
+                                                          href="product-standard.html"></a><a
+                            class="ps-product__img" href="product-standard.html"><img
+                            th:src="@{/assets/img/product/best-4-1.jpg}" alt=""/></a><a class="ps-product__img-alt"
+                                                                          href="product-standard.html"><img
+                            th:src="@{/assets/img/product/best-4-2.jpg}" alt=""/></a><a class="ps-product__favorite" href="#"><i
+                            class="fa fa-heart-o"></i></a>
+                        <ul class="ps-product__actions">
+                            <li><a href="product-standard.html">Quick Shop</a></li>
+                            <li><a href="product-standard.html">Add to cart</a></li>
+                        </ul>
+                        <p class="ps-product__size">S, M, L</p>
+                    </div>
+                    <div class="ps-product__content">
+                        <div class="ps-product__meta"><a href="shop-2-column.html"></a></div>
+                        <a class="ps-product__title" href="product-standard.html">Calvin Klein Logo
+                            Sweatpants</a>
+                        <p class="ps-product__price"> $35.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 ">
+                <div class="ps-product">
+                    <div class="ps-product__thumbnail"><a class="ps-product__overlay"
+                                                          href="product-standard.html"></a><span
+                            class="ps-product__badge"><i> - 14.3%</i></span><a class="ps-product__img"
+                                                                               href="product-standard.html"><img
+                            th:src="@{/assets/img/product/best-5-1.jpg}" alt=""/></a><a class="ps-product__img-alt"
+                                                                          href="product-standard.html"><img
+                            th:src="@{/assets/img/product/best-5-2.jpg}" alt=""/></a><a class="ps-product__favorite" href="#"><i
+                            class="fa fa-heart-o"></i></a>
+                        <ul class="ps-product__actions">
+                            <li><a href="product-standard.html">Quick Shop</a></li>
+                            <li><a href="product-standard.html">Add to cart</a></li>
+                        </ul>
+                        <p class="ps-product__size">S, M, L</p>
+                    </div>
+                    <div class="ps-product__content">
+                        <div class="ps-product__meta"><a href="shop-2-column.html"></a></div>
+                        <a class="ps-product__title" href="product-standard.html">Cluse La Bohème Rose Gold</a>
+                        <p class="ps-product__price sale">
+                            <del>$35.00</del>
+                            $30.00
+                        </p>
+                        <div class="ps-product__color">
+                            <div class="ps-radio ps-radio--color ps-radio--inline color-1">
+                                <input class="form-control" type="radio" id="color-undefined47"
+                                       name="color-undefined"/>
+                                <label for="color-undefined47"></label>
+                            </div>
+                            <div class="ps-radio ps-radio--color ps-radio--inline color-2">
+                                <input class="form-control" type="radio" id="color-undefined48"
+                                       name="color-undefined"/>
+                                <label for="color-undefined48"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 ">
+                <div class="ps-product">
+                    <div class="ps-product__thumbnail"><a class="ps-product__overlay"
+                                                          href="product-standard.html"></a><span
+                            class="ps-product__badge disabled"><i>Sold Out</i></span><a class="ps-product__img"
+                                                                                        href="product-standard.html"><img
+                            th:src="@{/assets/img/product/best-6-1.jpg}" alt=""/></a><a class="ps-product__img-alt"
+                                                                          href="product-standard.html"><img
+                            th:src="@{/assets/img/product/best-6-2.jpg}" alt=""/></a><a class="ps-product__favorite" href="#"><i
+                            class="fa fa-heart-o"></i></a>
+                        <ul class="ps-product__actions">
+                            <li><a href="product-standard.html">Quick Shop</a></li>
+                            <li><a href="product-standard.html">Add to cart</a></li>
+                        </ul>
+                        <p class="ps-product__size">S, M, L</p>
+                    </div>
+                    <div class="ps-product__content">
+                        <div class="ps-product__meta"><a href="shop-2-column.html"></a></div>
+                        <a class="ps-product__title" href="product-standard.html">Cuffed Beanie</a>
+                        <p class="ps-product__price"> $15.00</p>
+                        <div class="ps-product__color">
+                            <div class="ps-radio ps-radio--color ps-radio--inline color-1">
+                                <input class="form-control" type="radio" id="color-undefined16"
+                                       name="color-undefined"/>
+                                <label for="color-undefined16"></label>
+                            </div>
+                            <div class="ps-radio ps-radio--color ps-radio--inline color-2">
+                                <input class="form-control" type="radio" id="color-undefined70"
+                                       name="color-undefined"/>
+                                <label for="color-undefined70"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 ">
+                <div class="ps-product">
+                    <div class="ps-product__thumbnail"><a class="ps-product__overlay"
+                                                          href="product-standard.html"></a><a
+                            class="ps-product__img" href="product-standard.html"><img
+                            th:src="@{/assets/img/product/best-7-1.jpg}" alt=""/></a><a class="ps-product__img-alt"
+                                                                          href="product-standard.html"><img
+                            th:src="@{/assets/img/product/best-7-2.jpg}" alt=""/></a><a class="ps-product__favorite" href="#"><i
+                            class="fa fa-heart-o"></i></a>
+                        <ul class="ps-product__actions">
+                            <li><a href="product-standard.html">Quick Shop</a></li>
+                            <li><a href="product-standard.html">Add to cart</a></li>
+                        </ul>
+                        <p class="ps-product__size">S, M, L</p>
+                    </div>
+                    <div class="ps-product__content">
+                        <div class="ps-product__meta"><a href="shop-2-column.html"></a></div>
+                        <a class="ps-product__title" href="product-standard.html">Cyan Boheme</a>
+                        <p class="ps-product__price"> $45.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 ">
+                <div class="ps-product">
+                    <div class="ps-product__thumbnail"><a class="ps-product__overlay"
+                                                          href="product-standard.html"></a><a
+                            class="ps-product__img" href="product-standard.html"><img
+                            th:src="@{/assets/img/product/best-8-1.jpg}" alt=""/></a><a class="ps-product__img-alt"
+                                                                          href="product-standard.html"><img
+                            th:src="@{/assets/img/product/best-8-2.jpg}" alt=""/></a><a class="ps-product__favorite" href="#"><i
+                            class="fa fa-heart-o"></i></a>
+                        <ul class="ps-product__actions">
+                            <li><a href="product-standard.html">Quick Shop</a></li>
+                            <li><a href="product-standard.html">Add to cart</a></li>
+                        </ul>
+                        <p class="ps-product__size">S, M, L</p>
+                    </div>
+                    <div class="ps-product__content">
+                        <div class="ps-product__meta"><a href="shop-2-column.html"></a></div>
+                        <a class="ps-product__title" href="product-standard.html">Denim Shell Top with Ruffle
+                            Front</a>
+                        <p class="ps-product__price"> $56.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 ">
+                <div class="ps-product">
+                    <div class="ps-product__thumbnail"><a class="ps-product__overlay"
+                                                          href="product-standard.html"></a><a
+                            class="ps-product__img" href="product-standard.html"><img
+                            th:src="@{/assets/img/product/trend-1-1.jpg}" alt=""/></a><a class="ps-product__img-alt"
+                                                                           href="product-standard.html"><img
+                            th:src="@{/assets/img/product/trend-1-2.jpg}" alt=""/></a><a class="ps-product__favorite"
+                                                                           href="#"><i
+                            class="fa fa-heart-o"></i></a>
+                        <ul class="ps-product__actions">
+                            <li><a href="product-standard.html">Quick Shop</a></li>
+                            <li><a href="product-standard.html">Add to cart</a></li>
+                        </ul>
+                        <p class="ps-product__size">S, M, L</p>
+                    </div>
+                    <div class="ps-product__content">
+                        <div class="ps-product__meta"><a href="shop-2-column.html"></a></div>
+                        <a class="ps-product__title" href="product-standard.html">Cyan Boheme</a>
+                        <p class="ps-product__price"> $85.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 ">
+                <div class="ps-product">
+                    <div class="ps-product__thumbnail"><a class="ps-product__overlay"
+                                                          href="product-standard.html"></a><span
+                            class="ps-product__badge"><i> - 14.3%</i></span><a class="ps-product__img"
+                                                                               href="product-standard.html"><img
+                            th:src="@{/assets/img/product/trend-5-1.jpg}" alt=""/></a><a class="ps-product__img-alt"
+                                                                           href="product-standard.html"><img
+                            th:src="@{/assets/img/product/trend-5-2.jpg}" alt=""/></a><a class="ps-product__favorite"
+                                                                           href="#"><i
+                            class="fa fa-heart-o"></i></a>
+                        <ul class="ps-product__actions">
+                            <li><a href="product-standard.html">Quick Shop</a></li>
+                            <li><a href="product-standard.html">Add to cart</a></li>
+                        </ul>
+                        <p class="ps-product__size">S, M, L</p>
+                    </div>
+                    <div class="ps-product__content">
+                        <div class="ps-product__meta"><a href="shop-2-column.html"></a></div>
+                        <a class="ps-product__title" href="product-standard.html">Pink Leather Watch</a>
+                        <p class="ps-product__price sale">
+                            <del>$35.00</del>
+                            $30.00
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 ">
+                <div class="ps-product">
+                    <div class="ps-product__thumbnail"><a class="ps-product__overlay"
+                                                          href="product-standard.html"></a><a
+                            class="ps-product__img" href="product-standard.html"><img
+                            th:src="@{/assets/img/product/best-6-1.jpg}" alt=""/></a><a class="ps-product__img-alt"
+                                                                          href="product-standard.html"><img
+                            th:src="@{/assets/img/product/best-6-2.jpg}" alt=""/></a><a class="ps-product__favorite" href="#"><i
+                            class="fa fa-heart-o"></i></a>
+                        <ul class="ps-product__actions">
+                            <li><a href="product-standard.html">Quick Shop</a></li>
+                            <li><a href="product-standard.html">Add to cart</a></li>
+                        </ul>
+                        <p class="ps-product__size">S, M, L</p>
+                    </div>
+                    <div class="ps-product__content">
+                        <div class="ps-product__meta"><a href="shop-2-column.html"></a></div>
+                        <a class="ps-product__title" href="product-standard.html">Cuffed Beanie</a>
+                        <p class="ps-product__price"> $15.00</p>
+                        <div class="ps-product__color">
+                            <div class="ps-radio ps-radio--color ps-radio--inline color-1">
+                                <input class="form-control" type="radio" id="color-undefined38"
+                                       name="color-undefined"/>
+                                <label for="color-undefined38"></label>
+                            </div>
+                            <div class="ps-radio ps-radio--color ps-radio--inline color-2">
+                                <input class="form-control" type="radio" id="color-undefined68"
+                                       name="color-undefined"/>
+                                <label for="color-undefined68"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 ">
+                <div class="ps-product">
+                    <div class="ps-product__thumbnail"><a class="ps-product__overlay"
+                                                          href="product-standard.html"></a><a
+                            class="ps-product__img" href="product-standard.html"><img
+                            th:src="@{/assets/img/product/best-7-1.jpg}" alt=""/></a><a class="ps-product__img-alt"
+                                                                          href="product-standard.html"><img
+                            th:src="@{/assets/img/product/best-7-2.jpg}" alt=""/></a><a class="ps-product__favorite" href="#"><i
+                            class="fa fa-heart-o"></i></a>
+                        <ul class="ps-product__actions">
+                            <li><a href="product-standard.html">Quick Shop</a></li>
+                            <li><a href="product-standard.html">Add to cart</a></li>
+                        </ul>
+                        <p class="ps-product__size">S, M, L</p>
+                    </div>
+                    <div class="ps-product__content">
+                        <div class="ps-product__meta"><a href="shop-2-column.html"></a></div>
+                        <a class="ps-product__title" href="product-standard.html">Cyan Boheme</a>
+                        <p class="ps-product__price"> $45.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</th:block>
+</body>
+</html>
